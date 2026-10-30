@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Canile Adotta un amico</title>
+</head>
+<body>
+
+  <h1>Canile «Adotta un amico»</h1>
+
+  
+  <label>Nome: <input type="text" id="nome"></label><br>
+
+  <label>Specie:
+    <select id="specie">
+      <option value="">Scegli la specie</option>
+      <option value="Cane">Cane</option>
+      <option value="Gatto">Gatto</option>
+      <option value="Coniglio">Coniglio</option>
+    </select>
+  </label><br>
+
+  Taglia:
+  <label><input type="radio" name="taglia" value="Piccola"> Piccola</label>
+  <label><input type="radio" name="taglia" value="Media"> Media</label>
+  <label><input type="radio" name="taglia" value="Grande"> Grande</label><br>
+
+  <label>Età (anni): <input type="number" id="eta" min="0" max="20"></label><br>
+
+  <label><input type="checkbox" id="vaccinato"> Già vaccinato</label><br>
+
+  <button id="registra" onclick="registra()">Registra</button>
+
+  
+  <p id="messaggio"></p>
+
+  <img id="immagine" src="" alt="" width="120">
+
+  <h2>Pronti per l'adozione</h2>
+  <ul id="elenco-pronti"></ul>
+
+  <h2>In attesa di vaccino</h2>
+  <ul id="elenco-attesa"></ul>
+
+  
+  <h2>Conteggi per specie</h2>
+  <table>
+    <tr>
+      <td>Cane</td><td id="conta-cane">0</td>
+    </tr>
+    <tr>
+      <td>Gatto</td><td id="conta-gatto">0</td>
+    </tr>
+    <tr>
+      <td>Coniglio</td><td id="conta-coniglio">0</td>
+    </tr>
+  </table>
+
+  <p id="piu-ospitata"></p>
+  <p id="posti">Posti liberi: 6</p>
+
+  <script>
+  var exports = {};
+</script>
+<script src="dist/esanimali.js"></script>
+
+  <script src="dist/esanimali.js"></script>
+
+</body>
+</html>

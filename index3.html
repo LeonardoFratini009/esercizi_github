@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Diario di lettura della classe</title>
+</head>
+<body>
+
+  <h1>Diario di lettura della classe</h1>
+
+  
+  <label>Titolo: <input type="text" id="titolo"></label><br>
+  <label>Autore: <input type="text" id="autore"></label><br>
+
+  <label>Genere:
+    <select id="genere">
+      <option value="">Scegli il genere</option>
+      <option value="Avventura">Avventura</option>
+      <option value="Giallo">Giallo</option>
+      <option value="Fantasy">Fantasy</option>
+      <option value="Storico">Storico</option>
+    </select>
+  </label><br>
+
+  Formato:
+  <label><input type="radio" name="formato" value="Cartaceo"> Cartaceo</label>
+  <label><input type="radio" name="formato" value="Ebook"> Ebook</label><br>
+
+  <label>Voto (1-5): <input type="number" id="stelle" min="1" max="5"></label><br>
+
+  <label><input type="checkbox" id="consigliato"> Lo consiglio ai compagni</label><br>
+
+  <button onclick="registra()">Registra</button>
+
+ 
+  <p id="messaggio"></p>
+
+  <img id="immagine" src="" alt="" width="120">
+
+  <h2>Elenco libri</h2>
+  <ul id="elenco"></ul>
+
+  <h2>Conteggio per genere</h2>
+  <table>
+    <tr>
+      <td>Avventura</td><td id="conta-avventura">0</td>
+    </tr>
+    <tr>
+      <td>Giallo</td><td id="conta-giallo">0</td>
+    </tr>
+    <tr>
+      <td>Fantasy</td><td id="conta-fantasy">0</td>
+    </tr>
+    <tr>
+      <td>Storico</td><td id="conta-storico">0</td>
+    </tr>
+  </table>
+
+  
+  <h2>Statistiche</h2>
+  <p id="media"></p>
+  <p id="preferito"></p>
+
+  
+  <script src="dist/eserciziolibri.js"></script>
+
+</body>
+</html>
